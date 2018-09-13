@@ -6,8 +6,15 @@
 * max([1, 2, 4]); // 4
 * max([-1, 0]);   // 0
 */
-const max = arr => {
-  /* your logic here...*/
+
+function max(arr) {
+  var len = arr.length, max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
 };
 
 export default max;

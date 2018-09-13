@@ -10,8 +10,16 @@
  * sumElements(['1', 'hi', 3]);     // 4
  * sumElements([Infinity, NaN, 1]); // 1
  */
-const sumElements = arr => {
-  /* your logic here...*/
-};
+function sumElements(array){
+var sum = 0;
+
+	for(var i = 0; i < array.length; i++){
+		if (isFinite(array[i])) {
+			
+			sum += Number(array[i]);
+		}
+	}
+	return sum;
+}
 
 export default sumElements;

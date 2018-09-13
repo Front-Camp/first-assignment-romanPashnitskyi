@@ -9,8 +9,13 @@
 * sum(0, 5);   // 5
 * sum(-1, 13); // 12
 */
-const sum = (a, b) => {
-  /* your logic here...*/
+function sum(a, b) {
+	if (isFinite(a)) {
+		return a + b;
+	} else {
+		throw Error();
+	}		
+	return a + b;
 };
 
 export default sum;
